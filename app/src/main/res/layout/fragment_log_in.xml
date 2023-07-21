@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context="com.example.spoti.spoty.app.auth.login.LogInFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cw_height_logInF">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_login_spoti_black"
+            android:paddingHorizontal="@dimen/iv_padding_hor_logInF"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ly_height_logInF"
+        android:layout_marginTop="@dimen/ly_marginTop_logInF"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/etUsername_height_logInF"
+            android:layout_marginLeft="@dimen/etUsername_marginLeft_logInF"
+            android:layout_marginTop="@dimen/etUsername_marginTop_logInF"
+            android:layout_marginRight="@dimen/etUsername_marginRight_logInF"
+            android:background="@color/green"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="@dimen/etUsername_draw_padding_logInF"
+            android:drawableTint="@color/black"
+            android:hint="Username"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/etPassword_height_logInF"
+            android:layout_marginLeft="@dimen/etPassword_marginLeft_logInF"
+            android:layout_marginTop="@dimen/etPassword_marginTop_logInF"
+            android:layout_marginRight="@dimen/etPassword_marginRight_logInF"
+            android:background="@color/green"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="@dimen/etPassword_drawPadding_logInF_logInF"
+            android:hint="Paswword"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/tv_width_logInF"
+                android:layout_height="@dimen/tv_height_logInF"
+                android:layout_marginLeft="@dimen/tv_marginLeft_logInF"
+                android:layout_marginTop="@dimen/tv_marginTop_logInF"
+                android:text="@string/remember"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sw_marginLeft_logInF"
+                android:layout_marginTop="@dimen/cv_marginTop_logInF"
+                android:checked="true"
+                android:theme="@style/Switch" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btnLogIn_marginLeft_logInF"
+            android:layout_marginTop="@dimen/btnLogIn_marginTop_logInF"
+            android:layout_marginRight="@dimen/btnLogIn_marginRight_logInF"
+            android:backgroundTint="@color/black"
+            android:drawableTint="@color/white"
+            android:text="@string/logIn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Ly_marginTop_logInF"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/view_width_logInF"
+                android:layout_height="@dimen/view_height_logInF"
+                android:layout_marginLeft="@dimen/view_marginLeft_logInF"
+                android:layout_marginTop="@dimen/view_marginTop_logInF"
+                android:layout_marginRight="@dimen/view_marginRight_logInF"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:backgroundTint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/or"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_textSize_logInF" />
+
+            <View
+                android:layout_width="@dimen/view_width_logInF"
+                android:layout_height="@dimen/view_height_logInF"
+                android:layout_marginLeft="@dimen/view_marginLeft_logInF"
+                android:layout_marginTop="@dimen/view_marginTop_logInF"
+                android:layout_marginRight="@dimen/view_marginRight_logInF"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:backgroundTint="@color/black" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogInFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btnLogInFacebook_marginLeft_logInF"
+            android:layout_marginTop="@dimen/btnLogInFacebook_marginTop_logInF"
+            android:layout_marginRight="@dimen/btnLogInFacebook_marginRight_logInF"
+            android:backgroundTint="@color/blue"
+            android:text="@string/log_in_with_facebook" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ly_marginTop__logInF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/tv_width__logInF"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/register"
+                android:textSize="@dimen/txv_textSize__logInF"/>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/signup"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnResetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/btnResetPassword_marginRight__logInF"
+            android:layout_marginLeft="@dimen/btnResetPassword_marginleft_logInF"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/green"
+            android:text="@string/reset_password"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

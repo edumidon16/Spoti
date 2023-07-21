@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.spoti.spoty.app.auth.signup.SignUpFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingHorizontal="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_login_spoti_black" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/green"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/black"
+            android:hint="Username"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/green"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="5dp"
+            android:hint="Paswword"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/etPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin_left_signup"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/margin_right_signup"
+            android:background="@color/green"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="5dp"
+            android:hint="Paswword"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_btn"
+            android:layout_marginLeft="@dimen/margin_left_btn"
+            android:layout_marginRight="@dimen/margin_right_btn"
+            android:backgroundTint="@color/black"
+            android:text="@string/sign_up" />
+    </LinearLayout>
+
+</FrameLayout>

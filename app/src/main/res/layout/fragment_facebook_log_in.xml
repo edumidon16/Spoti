@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/blue"
+    tools:context="com.example.spoti.spoty.app.auth.loginfacebook.FacebookLogInFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_facebook"/>
+
+        <EditText
+            android:id="@+id/etUsernameFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_facebook_login"
+            android:layout_marginRight="@dimen/margin_facebook_login"
+            android:hint="@string/facebook_username"/>
+
+        <EditText
+            android:id="@+id/etPasswordFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="@dimen/margin_facebook_login"
+            android:layout_marginRight="@dimen/margin_facebook_login"
+            android:hint="@string/facebook_password"/>
+        
+        <Button
+            android:id="@+id/btn_logInFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:text="@string/logIn"
+            android:layout_marginRight="@dimen/margin_facebook_login"
+            android:layout_marginLeft="@dimen/margin_facebook_login"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
